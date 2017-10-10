@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timeline</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Raleway|Kalam|Kaushan+Script|Sedgwick+Ave|Bad+Script" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div class="pageContainer">
+    <nav>
+      <div class="navName">Oksana Harris</div>
+      <div class="navDesc">Full-Stack Development | Product Management | UX Design</div>
+      <div class="navItem">Porfolio</div>
+      <div class="navItem">Timeline</div>
+      <div class="navItem">About</div>
+    </nav>
+    <div id="educationSection" class="section educationSection">
+      <div class="markerLines">
+        <div class="markerLine">
+          <div class="activeMarker educationMarker"></div>
+        </div>
+        <div class="markerLine"></div>
+        <div class="markerLine"></div>
+        <div class="markerLine"></div>
+        <div class="markerLine"></div>
+        <div class="markerLine"></div>
+        <div class="markerLine">
+          <div class="activeMarker educationMarker"></div>
+        </div>
+        <div class="markerLine"></div>
+        <div class="markerLine">
+          <div class="activeMarker educationMarker"></div>
+        </div>
+        <div class="markerLine">
+          <div class="activeMarker educationMarker"></div>
+        </div>
+      </div>
+      <div class="sectionContainer educationContainer">
+        <div class="item educationItem">BA in Business Admin - Marketing &amp Finance</div>
+        <div class="item educationItem"></div>
+        <div class="item educationItem"></div>
+        <div class="item educationItem"></div>
+        <div class="item educationItem"></div>
+        <div class="item educationItem"></div>
+        <div class="item educationItem">Product Mgmt Certification from Pragmatic Marketing</div>
+        <div class="item educationItem"></div>
+        <div class="item educationItem">UX Design training at General Assembly</div>
+        <div class="item educationItem">Full-Stack Developer Bootcamp at DevLeague</div>
+      </div>
+    </div>
+    <div id="professionalSection" class="section professionalSection withBottomPadding">
+      <div class="braceContainer">
+        <img src="curlybrace.png" class="pge" alt="">
+        <img src="curlybrace.png" class="ecova" alt="">
+        <img src="curlybrace.png" class="consulting" alt="">
+      </div>
+      <div class="sectionContainer professionalContainer">
+        <div class="professionalItem pgeDesc">
+          <div class="jobTitle pgeTitle">Product Manager at <span class="company">PG&E</span></div>
+          <ul class="jobSummaryList">
+            <li class="jobSummaryBullet"><span class="jobSummaryBulletText">Launched a few new products like low-flow showerheads and a recycling program with national chain retailers.</span></li>
+            <li class="jobSummaryBullet"><span class="jobSummaryBulletText">Oversaw energy efficiency portfolios for Appliances and Food Service Technology.</span></li>
+            <li class="jobSummaryBullet"><span class="jobSummaryBulletText">Lots of market research, lifecycle analysis, tech assessments and strategy development.</span></li>
+          </ul>
+        </div>
+        <div class="professionalItem ecovaDesc">
+          <div class="jobTitle ecovaTitle">Senior Product Analyst at <span class="company">Ecova</span></div>
+          <ul class="jobSummaryList">
+            <li class="jobSummaryBullet"><span class="jobSummaryBulletText">Revamped the suite of operations-supporting technology: added CRM - for call center, segmentation, targeting, marketing automation and web analytics - for Marketing, sales data visualization - for Account Mgmt, onsite audit tools - for field techs.</span></li>
+            <li class="jobSummaryBullet"><span class="jobSummaryBulletText">Led agile development of a white-label customer portal that integrated with back-end system via RESTful API.</span></li>
+            <li class="jobSummaryBullet"><span class="jobSummaryBulletText">Lots of user interviews, wireframing, usability testing, client presentations.</span></li>
+            <li class="jobSummaryBullet"><span class="jobSummaryBulletText">Reimagining customer engagement strategy by leveraging machine learning on interaction data throughout the customer journey.</span></li>
+          </ul>
+        </div>
+        <div class="professionalItem consultingDesc">
+          <div class="jobTitle consultingTitle">Independent Marketing & UX Consultant</div>
+          <ul class="jobSummaryList">
+            <li class="jobSummaryBullet"><span class="jobSummaryBulletText">Capture the story and the essence of the brand.</span></li>
+            <li class="jobSummaryBullet"><span class="jobSummaryBulletText">Develop customer engagement & UX strategy, including launching new digital sales funnels.</span></li>
+            <li class="jobSummaryBullet"><span class="jobSummaryBulletText">Marketing automation and email marketing.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+     <div class="timeline stickyTimeline" id="timelineCont">
+      <div class="pageSectionTitle">Timeline</div>
+      <div class="timelineBtns">
+        <a id="aEducation" href="#educationSection">
+          <div class="timelineBtn educationBtn activeBtn" id="edBtn">
+            <div class="words">EDUCATION</div>
+            <div class="reveal revealEd active" id="revealDivEd"></div>
+            <div class="background" id="backgroundEd"></div>
+          </div>
+        </a>
+        <a id="aMovies" href="#photogSection">
+          <div class="timelineBtn professionalBtn" id="profBtn">
+            <div class="words">EXPERIENCE</div>
+            <div class="reveal revealProf" id="revealDivProf"></div>
+            <div class="background" id="backgroundProf"></div>
+          </div>
+        </a>
+        <a id="aProfessional" href="#professionalSection">
+          <div class="timelineBtn creativeBtn" id="photBtn">
+            <div class="words">EXPRESSION</div>
+            <div class="reveal revealPhot" id="revealDivPhot"></div>
+            <div class="background" id="backgroundPhot"></div>
+          </div>
+        </a>
+      </div>
+      <!-- <div class="categoryDesc" id="descriptionLine">Education is blah blah blah</div> -->
+      <div class="years">
+        <div class="year">2008</div>
+        <div class="year">2009</div>
+        <div class="year">2010</div>
+        <div class="year">2011</div>
+        <div class="year">2012</div>
+        <div class="year">2013</div>
+        <div class="year">2014</div>
+        <div class="year">2015</div>
+        <div class="year">2016</div>
+        <div class="year">2017</div>
+      </div>
+      <div class="line"></div>
+      <div class="circles">
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+        <div class="circle" id="circle4"></div>
+        <div class="circle" id="circle5"></div>
+        <div class="circle" id="circle6"></div>
+        <div class="circle" id="circle7"></div>
+        <div class="circle" id="circle8"></div>
+        <div class="circle" id="circle9"></div>
+        <div class="circle" id="circle10"></div>
+      </div>
+    </div>
+
+    <div id="photogSection" class="photogSection withPadding">
+      <div class="markerLines">
+        <div class="markerLine 2008"></div>
+        <div class="markerLine 2009">
+          <div class="activeMarker creativeMarker 2009"></div>
+        </div>
+        <div class="markerLine 2010"></div>
+        <div class="markerLine 2011">
+          <div class="activeMarker creativeMarker 2011"></div>
+        </div>
+        <div class="markerLine 2012">
+          <div class="activeMarker creativeMarker 2012"></div>
+        </div>
+        <div class="markerLine 2013">
+          <div class="activeMarker creativeMarker 2013"></div>
+        </div>
+        <div class="markerLine 2014"></div>
+        <div class="markerLine 2015">
+          <div class="activeMarker creativeMarker 2015"></div>
+        </div>
+        <div class="markerLine 2016">
+          <div class="activeMarker creativeMarker 2016"></div>
+        </div>
+        <div class="markerLine 2017">
+          <div class="activeMarker creativeMarker 2017"></div>
+        </div>
+      </div>
+      <div class="sectionContainer photogContainer">
+        <div class="item photogItem"></div>
+        <div class="item photogItem">
+          <div class="photogDescr">Nature Photography</div>
+          <div class="photogImg nature1"></div>
+          <div class="photogImg nature2"></div>
+          <div class="photogImg nature3"></div>
+        </div>
+        <div class="item photogItem"></div>
+        <div class="item photogItem">
+          <div class="photogDescr">Weddings</div>
+          <div class="photogImg wedd1"></div>
+          <div class="photogImg wedd2"></div>
+          <div class="photogImg wedd3"></div>
+        </div>
+        <div class="item photogItem">
+          <div class="photogDescr">Portraits & Headshots</div>
+          <div class="photogImg port1"></div>
+          <div class="photogImg port2"></div>
+          <div class="photogImg port3"></div>
+        </div>
+        <div class="item photogItem">
+          <div class="photogDescr">Fashion & Beauty Publications</div>
+          <div class="photogImg beauty1"></div>
+          <div class="photogImg beauty2"></div>
+          <div class="photogImg beauty3"></div>
+        </div>
+        <div class="item photogItem"></div>
+        <div class="item photogItem">
+          <div class="photogDescr">Us In Paradise</div>
+          <div class="photogImg usinp1"></div>
+          <div class="photogImg usinp2"></div>
+          <div class="photogImg usinp3"></div>
+        </div>
+        <div class="item photogItem">
+          <div class="photogDescr">Babes On Beaches tutorials</div>
+          <div class="photogImg beach2"></div>
+          <div class="photogDescr bizdesc">Business Branding</div>
+          <div class="photogImg biz1"></div>
+          <div class="photogImg biz2"></div>
+          <div class="photogDescr bizdesc">Scaling custom Snapchat filters</div>
+        </div>
+        <div class="item photogItem">
+          <div class="photogDescr">Dev Fun</div>
+          <div class="photogImg dev1"></div>
+          <div class="photogImg dev2"></div>
+          <div class="photogImg dev3">
+            <div class="zs">ZzZzzZ</div>
+            <div class="sun">
+              <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+              </div>
+              <img class="smile" src="smile.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+
+    <div class="pageSectionTitle">Portfolio</div>
+    <div class="portfolioContainer">
+      <div class="portRow">
+        <div class="portItem">
+          <div class="portItemDesc">
+            <p class="portItemTitle">InvisiArt</p>
+            <p class="portItemDescP">An Augmented Reality canvas to which anyone can contribute art - fueling community and creativity! <br> Built with JavaScript, Angular, MongoDB, AR.js, THREE.js and HTML5 Canvas.
+            </p>
+          </div>
+        </div>
+        <div class="portItem">
+          <div class="portItemDesc">
+            <p class="portItemTitle">Kanban in React</p>
+            <p class="portItemDescP">This is a description of this portfolio item.</p>
+          </div>
+        </div>
+        <div class="portItem">
+          <div class="portItemDesc">
+            <p class="portItemTitle">ArtCrawl</p>
+            <p class="portItemDescP">This is a description of this portfolio item.</p>
+          </div>
+        </div>
+      </div>
+      <div class="portRow">
+        <div class="portItem">
+          <div class="portItemDesc">
+            <p class="portItemTitle">PixelPainter</p>
+            <p class="portItemDescP">This is a description of this portfolio item.</p>
+          </div>
+        </div>
+        <div class="portItem">
+          <div class="portItemDesc">
+            <p class="portItemTitle">ConnectUs</p>
+            <p class="portItemDescP">This is a description of this portfolio item.</p>
+          </div>
+        </div>
+        <div class="portItem">
+          <div class="portItemDesc">
+            <p class="portItemTitle">To-Do-Do-Do</p>
+            <p class="portItemDescP">This is a description of this portfolio item.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+
+    <div class="pageSectionTitle">About</div>
+    <div class="aboutCont">
+      <div class="rightAbout">
+        <div class="name">Oksana Harris</div>
+        <div class="myPic"></div>
+        <div class="aboutDesc">I was born on a dark and stormy night... oops, that's Danaerys Targaerean... blah blah blah blah blah blah blah</div>
+      </div>
+      <div class="life"></div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
