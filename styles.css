@@ -130,7 +130,7 @@ a {
   /*background-color: seagreen;*/
   transition-property: background-position;
   transition-duration: 3s;
-  background-image: url(vine2.PNG);
+  background-image: url('./img/vine2.PNG');
   background-size: 209px 98px;
   background-position: -13px -25px;
   background-repeat: no-repeat;
@@ -339,7 +339,6 @@ a {
 .photogImg {
   width: 100px;
   height: 100px;
-  /*border: 2px solid grey;*/
   border-radius: 3px;
   margin-top: 20px;
   box-shadow: 0 2px 10px grey;
@@ -347,135 +346,135 @@ a {
 }
 
 .wedd1 {
-  background-image: url('wedd1.jpg');
+  background-image: url('./img/wedd1.jpg');
   background-size: 100px 122px;
   background-position-y: 45%;
 }
 
 .wedd2 {
-  background-image: url('wedd5.jpg');
+  background-image: url('./img/wedd5.jpg');
   background-size: 100px 148px;
   background-position-x: 10%;
   background-position-y: 4%;
 }
 
 .wedd3 {
-  background-image: url('wedd3.jpg');
+  background-image: url('./img/wedd3.jpg');
   background-size: 127px 100px;
   background-position-x: 36%;
 }
 
 .port1 {
-  background-image: url('port1.jpg');
+  background-image: url('./img/port1.jpg');
   background-size: 135px 100px;
   background-position-x: 12%;
 }
 
 .port2 {
-  background-image: url('port3.jpg');
+  background-image: url('./img/port3.jpg');
   background-size: 100px 119px;
   background-position-y: 22%;
 }
 
 .port3 {
-  background-image: url('port2.jpg');
+  background-image: url('./img/port2.jpg');
   background-size: 170px 107px;
   background-position-x: 67%;
 }
 
 .beauty1 {
-  background-image: url('beauty1.jpg');
+  background-image: url('./img/beauty1.jpg');
   background-size: 100px 140px;
   background-position-y: 3%;
   background-position-x: 1%
 }
 
 .beauty2 {
-  background-image: url('beauty4.jpeg');
+  background-image: url('./img/beauty4.jpeg');
   background-size: 126px 101px;
   background-position-y: 1%;
   background-position-x: 49%;
 }
 
 .beauty3 {
-  background-image: url('beauty6.jpeg');
+  background-image: url('./img/beauty6.jpeg');
   background-size: 123px 154px;
   background-position-y: 59%;
   background-position-x: 56%;
 }
 
 .nature1 {
-  background-image: url('nature1.jpg');
+  background-image: url('./img/nature1.jpg');
   background-size: 100px 142px;
     background-position-y: 45%;
     background-position-x: 59%;
 }
 
 .nature2 {
-  background-image: url('nature2.jpg');
+  background-image: url('./img/nature2.jpg');
   background-size: 150px 106px;
   background-position-y: 59%;
   background-position-x: 59%;
 }
 
 .nature3 {
-  background-image: url('nature3.jpg');
+  background-image: url('./img/nature3.jpg');
   background-size: 114px 100px;
   background-position-y: 59%;
   background-position-x: 66%;
 }
 
 .usinp1 {
-  background-image: url('usinp0.jpeg');
+  background-image: url('./img/usinp0.jpeg');
   background-size: 210px 185px;
   background-position-y: 75%;
   background-position-x: 61%;
 }
 
 .usinp2 {
-  background-image: url(usinp1.jpeg);
+  background-image: url(./img/usinp1.jpeg);
   background-size: 163px 112px;
   background-position-y: 97%;
   background-position-x: 61%;
 }
 
 .usinp3 {
-  background-image: url('usinp7.jpeg');
+  background-image: url('./img/usinp7.jpeg');
   background-size: 170px 100px;
   background-position-y: 59%;
   background-position-x: 34%;
 }
 
 .beach1 {
-  background-image: url('beach1.jpeg');
+  background-image: url('./img/beach1.jpeg');
   background-size: 152px 100px;
   background-position-y: 59%;
   background-position-x: 28%;
 }
 
 .beach2 {
-  background-image: url('beach2.jpeg');
+  background-image: url('./img/beach2.jpeg');
   background-size: 100px 125px;
     background-position-y: 86%;
     background-position-x: 42%;
 }
 
 .beach3 {
-  background-image: url('beach3.jpeg');
+  background-image: url('./img/beach3.jpeg');
   background-size: 147px 100px;
   background-position-y: 59%;
   background-position-x: 53%;
 }
 
 .biz1 {
-  background-image: url('biz1.jpeg');
+  background-image: url('./img/biz1.jpeg');
   background-size: 120px 100px;
   background-position-x: 59%;
   margin-top: 10px;
 }
 
 .biz2 {
-  background-image: url('biz2.png');
+  background-image: url('./img/biz2.png');
   background-size: 100px 100px;
 }
 
@@ -490,7 +489,7 @@ a {
 }
 
 .dev1 {
-  background-image: url('artcrawl.png');
+  background-image: url('./img/artcrawl.png');
   background-size: 164px 270px;
   background-position-y: 25%;
   background-position-x: 54%;
@@ -498,7 +497,7 @@ a {
 }
 
 .dev2 {
-  background-image: url('invisiart.jpg');
+  background-image: url('./img/invisiart.jpg');
   background-size: 146px 167px;
   background-position-y: 63%;
   background-position-x: 57%;
@@ -639,21 +638,21 @@ a {
   width: 26vw;
   height: 18vw;
   border-radius: 3px;
-  background: url('invisiart.jpg');
+  background: url('./img/invisiart.jpg');
   background-size: 26vw 18vw;
   overflow: hidden;
   box-sizing: border-box;
 }
 
 .portItemDesc {
-  background: -moz-linear-gradient(top, rgba(252, 214, 42,0.6) 0%, rgba(252, 214, 42,0.6) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(252, 214, 42,0.6) 0%, rgba(252, 214, 42,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(252, 214, 42,0.6) 0%, rgba(252, 214, 42,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top, rgba(32, 114, 214,0.6) 0%, rgba(32, 114, 214,0.6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(32, 114, 214,0.6) 0%, rgba(32, 114, 214,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(32, 114, 214,0.6) 0%, rgba(32, 114, 214,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   width: 26vw;
   height: 18vw;
   border-radius: 3px;
   position: relative;
-  box-shadow: 0 0 20px rgb(252, 214, 42);
+  box-shadow: 0 0 20px rgb(32, 114, 214);
   opacity: 1;
   top: 0;
   left: 0;
@@ -731,7 +730,7 @@ a {
 }
 
 .life {
-  background: url(mylife.jpg);
+  background: url(./img/mylife.jpg);
   width: 500px;
   height: 550px;
   background-size: 500px 550px;
@@ -739,7 +738,7 @@ a {
 }
 
 .myPic {
-  background: url(oksana.jpg);
+  background: url(./img/oksana.jpg);
   width: 300px;
   height: 300px;
   background-size: 400px 400px;
