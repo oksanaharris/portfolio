@@ -718,31 +718,37 @@ a {
 }
 
 .aboutCont {
+
+}
+
+.rightAbout {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.rightAbout {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .life {
   background: url(./img/mylife.jpg);
-  width: 500px;
-  height: 550px;
-  background-size: 500px 550px;
-  min-width: 500px;
+  width: 30vw;
+  height: 33vw;
+  background-size: 100% 100%;
+  /* min-width: 300px; */
 }
 
 .myPic {
   background: url(./img/oksana.jpg);
-  width: 300px;
-  height: 300px;
-  background-size: 400px 400px;
-  background-position: -27px -11px;
-  min-width: 300px;
-  border-radius: 50%;
+  width: 30vw;
+  height: 33vw;
+  background-size: 127% 110%;
+  background-position: 33% 53%;
+  /* min-width: 300px; */
+  border-radius: 2px;
+}
+
+.aboutDesc {
+  width: 33%;
+  /*background-color: salmon;*/
+  padding: 0 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
 }
