@@ -10,26 +10,51 @@
 
 window.onscroll = function(){
 
-  photogSection = document.getElementById('photogSection').getBoundingClientRect().top;
-
   // console.log('Y POSITION', photogSection);
+
+  let timeline = document.getElementById('timelineCont');
+  let navMenu = document.getElementById('navMenu');
+  let educSec = document.getElementById('educationSection');
+  let profSec = document.getElementById('professionalSection');
+  let photogSec = document.getElementById('photogSection');
 
   let thresholdPassed = false;
 
-  if (thresholdPassed === false && document.getElementById('photogSection').getBoundingClientRect().top <= document.getElementById('timelineCont').offsetHeight) {
-    document.getElementById('professionalSection').style.paddingBottom = (400 - document.getElementById('timelineCont').offsetHeight) + 'px';
-    document.getElementById('timelineCont').classList.remove('stickyTimeline');
+  if (thresholdPassed === false && timeline.getBoundingClientRect().top <= navMenu.offsetHeight) {
+
+    timeline.classList.add('stickyTimeline');
+
+    educSec.classList.add('educTopPadding');
+
     thresholdPassed = true;
-  } else if (document.getElementById('photogSection').offsetTop > document.getElementById('timelineCont').offsetHeight) {
-    document.getElementById('timelineCont').classList.add('stickyTimeline');
-    document.getElementById('professionalSection').style.paddingBottom = '400px';
-    thresholdPassed = false;
   }
+
+  if (thresholdPassed === true && educSec.getBoundingClientRect().top > (navMenu.offsetHeight + timeline.offsetHeight)) {
+
+    timeline.classList.remove('stickyTimeline');
+
+    educSec.classList.remove('educTopPadding');
+  }
+
+  if (photogSec.getBoundingClientRect().top <= (navMenu.offsetHeight + timeline.offsetHeight)){
+
+    timeline.classList.remove('stickyTimeline');
+
+    timeline.classList.add('scrollingTimeline');
+
+    timeline.style.top = (photogSec.offsetTop - timeline.offsetHeight) + 'px';
+  } else {
+    timeline.classList.remove('scrollingTimeline');
+    timeline.style.top = '60px';
+  }
+
 
   let revealId;
   let backgroundId;
 
-  if (window.scrollY < 150){
+  console.log('prof sec offset top', profSec.offsetTop);
+
+  if (window.scrollY < (profSec.offsetTop - 400)){
     revealId = 'revealDivEd';
     backgroundId = 'backgroundEd';
 
@@ -45,7 +70,7 @@ window.onscroll = function(){
     document.getElementById(revealId).classList.add('active');
     document.getElementById(backgroundId).classList.add('move');
 
-  } else if (window.scrollY > 149 && window.scrollY < 1050) {
+  } else if (window.scrollY >= (profSec.offsetTop - 500) && window.scrollY < (photogSec.offsetTop - 700)) {
     revealId = 'revealDivProf';
     backgroundId = 'backgroundProf';
 
@@ -61,7 +86,7 @@ window.onscroll = function(){
     document.getElementById(revealId).classList.add('active');
     document.getElementById(backgroundId).classList.add('move');
 
-  } else if (window.scrollY > 1049) {
+  } else if (window.scrollY >= (photogSec.offsetTop - 700)) {
     revealId = 'revealDivPhot';
     backgroundId = 'backgroundPhot';
 
@@ -77,7 +102,6 @@ window.onscroll = function(){
     document.getElementById(revealId).classList.add('active');
     document.getElementById(backgroundId).classList.add('move');
   }
-
 
 };
 
