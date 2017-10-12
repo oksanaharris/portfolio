@@ -8,14 +8,129 @@
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+  <nav class="navMenu">
+    <div class="navName">OKSANA HARRIS</div>
+    <!--     <div class="navDesc">Full-Stack Development | Product Management | UX Design</div> -->
+    <div class="navItem">Porfolio</div>
+    <div class="navItem">Timeline</div>
+    <div class="navItem">About</div>
+  </nav>
   <div class="pageContainer">
-    <nav>
-      <div class="navName">Oksana Harris</div>
-      <div class="navDesc">Full-Stack Development | Product Management | UX Design</div>
-      <div class="navItem">Porfolio</div>
-      <div class="navItem">Timeline</div>
-      <div class="navItem">About</div>
-    </nav>
+
+    <!-- PORTFOLIO -->
+
+    <div class="portfolioContainer">
+      <div class="pageSectionTitle">Portfolio</div>
+      <div class="portRow">
+        <a target="_blank" href="http://invisiARt.com">
+          <div class="portItem">
+            <div class="portItemDesc">
+              <p class="portItemTitle">InvisiARt</p>
+              <p class="portItemDescP">An Augmented Reality canvas to which anyone can contribute art - fueling community and creativity! <br> Built with JavaScript, Angular, MongoDB, AR.js, THREE.js and HTML5 Canvas.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a target="_blank" href="http://reactkanban.oksanaharris.com">
+          <div class="portItem">
+            <div class="portItemDesc">
+              <p class="portItemTitle">Kanban in React</p>
+              <p class="portItemDescP">This is a description of this portfolio item.</p>
+            </div>
+          </div>
+        </a>
+        <a target="_blank" href="https://joshualeehawaii.github.io/art-crawl/">
+          <div class="portItem">
+            <div class="portItemDesc">
+              <p class="portItemTitle">ArtCrawl</p>
+              <p class="portItemDescP">This is a description of this portfolio item.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="portRow">
+        <a target="_blank" href="http://pixelpainter.oksanaharris.com">
+          <div class="portItem">
+            <div class="portItemDesc">
+              <p class="portItemTitle">PixelPainter</p>
+              <p class="portItemDescP">This is a description of this portfolio item.</p>
+            </div>
+          </div>
+        </a>
+        <a target="_blank" href="http://weconnect.oksanaharris.com">
+          <div class="portItem">
+            <div class="portItemDesc">
+              <p class="portItemTitle">WeConnect</p>
+              <p class="portItemDescP">This is a description of this portfolio item.</p>
+            </div>
+          </div>
+        </a>
+        <a target="_blank" href="http://expressgallery.oksanaharris.com">
+          <div class="portItem">
+            <div class="portItemDesc">
+              <p class="portItemTitle">To-Do-Do-Do</p>
+              <p class="portItemDescP">This is a description of this portfolio item.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+
+    <div class="timeline stickyTimeline" id="timelineCont">
+      <div class="pageSectionTitle">Timeline</div>
+      <div class="timelineBtns">
+        <a id="aEducation" href="#educationSection">
+          <div class="timelineBtn educationBtn activeBtn" id="edBtn">
+            <div class="words">EDUCATION</div>
+            <div class="reveal revealEd active" id="revealDivEd"></div>
+            <div class="background" id="backgroundEd"></div>
+          </div>
+        </a>
+        <a id="aMovies" href="#photogSection">
+          <div class="timelineBtn professionalBtn" id="profBtn">
+            <div class="words">EXPERIENCE</div>
+            <div class="reveal revealProf" id="revealDivProf"></div>
+            <div class="background" id="backgroundProf"></div>
+          </div>
+        </a>
+        <a id="aProfessional" href="#professionalSection">
+          <div class="timelineBtn creativeBtn" id="photBtn">
+            <div class="words">EXPRESSION</div>
+            <div class="reveal revealPhot" id="revealDivPhot"></div>
+            <div class="background" id="backgroundPhot"></div>
+          </div>
+        </a>
+      </div>
+      <!-- <div class="categoryDesc" id="descriptionLine">Education is blah blah blah</div> -->
+      <div class="years">
+        <div class="year">2008</div>
+        <div class="year">2009</div>
+        <div class="year">2010</div>
+        <div class="year">2011</div>
+        <div class="year">2012</div>
+        <div class="year">2013</div>
+        <div class="year">2014</div>
+        <div class="year">2015</div>
+        <div class="year">2016</div>
+        <div class="year">2017</div>
+      </div>
+      <div class="line"></div>
+      <div class="circles">
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+        <div class="circle" id="circle4"></div>
+        <div class="circle" id="circle5"></div>
+        <div class="circle" id="circle6"></div>
+        <div class="circle" id="circle7"></div>
+        <div class="circle" id="circle8"></div>
+        <div class="circle" id="circle9"></div>
+        <div class="circle" id="circle10"></div>
+      </div>
+    </div>
+
     <div id="educationSection" class="section educationSection">
       <div class="markerLines">
         <div class="markerLine">
@@ -82,58 +197,6 @@
             <li class="jobSummaryBullet"><span class="jobSummaryBulletText">Marketing automation and email marketing.</span></li>
           </ul>
         </div>
-      </div>
-    </div>
-     <div class="timeline stickyTimeline" id="timelineCont">
-      <div class="pageSectionTitle">Timeline</div>
-      <div class="timelineBtns">
-        <a id="aEducation" href="#educationSection">
-          <div class="timelineBtn educationBtn activeBtn" id="edBtn">
-            <div class="words">EDUCATION</div>
-            <div class="reveal revealEd active" id="revealDivEd"></div>
-            <div class="background" id="backgroundEd"></div>
-          </div>
-        </a>
-        <a id="aMovies" href="#photogSection">
-          <div class="timelineBtn professionalBtn" id="profBtn">
-            <div class="words">EXPERIENCE</div>
-            <div class="reveal revealProf" id="revealDivProf"></div>
-            <div class="background" id="backgroundProf"></div>
-          </div>
-        </a>
-        <a id="aProfessional" href="#professionalSection">
-          <div class="timelineBtn creativeBtn" id="photBtn">
-            <div class="words">EXPRESSION</div>
-            <div class="reveal revealPhot" id="revealDivPhot"></div>
-            <div class="background" id="backgroundPhot"></div>
-          </div>
-        </a>
-      </div>
-      <!-- <div class="categoryDesc" id="descriptionLine">Education is blah blah blah</div> -->
-      <div class="years">
-        <div class="year">2008</div>
-        <div class="year">2009</div>
-        <div class="year">2010</div>
-        <div class="year">2011</div>
-        <div class="year">2012</div>
-        <div class="year">2013</div>
-        <div class="year">2014</div>
-        <div class="year">2015</div>
-        <div class="year">2016</div>
-        <div class="year">2017</div>
-      </div>
-      <div class="line"></div>
-      <div class="circles">
-        <div class="circle" id="circle1"></div>
-        <div class="circle" id="circle2"></div>
-        <div class="circle" id="circle3"></div>
-        <div class="circle" id="circle4"></div>
-        <div class="circle" id="circle5"></div>
-        <div class="circle" id="circle6"></div>
-        <div class="circle" id="circle7"></div>
-        <div class="circle" id="circle8"></div>
-        <div class="circle" id="circle9"></div>
-        <div class="circle" id="circle10"></div>
       </div>
     </div>
 
@@ -224,76 +287,25 @@
       </div>
     </div>
 
-    <!-- PORTFOLIO -->
-
-    <div class="pageSectionTitle">Portfolio</div>
-    <div class="portfolioContainer">
-      <div class="portRow">
-        <a target="_blank" href="http://invisiARt.com">
-          <div class="portItem">
-            <div class="portItemDesc">
-              <p class="portItemTitle">InvisiARt</p>
-              <p class="portItemDescP">An Augmented Reality canvas to which anyone can contribute art - fueling community and creativity! <br> Built with JavaScript, Angular, MongoDB, AR.js, THREE.js and HTML5 Canvas.
-              </p>
-            </div>
-          </div>
-        </a>
-        <a target="_blank" href="http://reactkanban.oksanaharris.com">
-          <div class="portItem">
-            <div class="portItemDesc">
-              <p class="portItemTitle">Kanban in React</p>
-              <p class="portItemDescP">This is a description of this portfolio item.</p>
-            </div>
-          </div>
-        </a>
-        <a target="_blank" href="https://joshualeehawaii.github.io/art-crawl/">
-          <div class="portItem">
-            <div class="portItemDesc">
-              <p class="portItemTitle">ArtCrawl</p>
-              <p class="portItemDescP">This is a description of this portfolio item.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="portRow">
-        <a target="_blank" href="http://pixelpainter.oksanaharris.com">
-          <div class="portItem">
-            <div class="portItemDesc">
-              <p class="portItemTitle">PixelPainter</p>
-              <p class="portItemDescP">This is a description of this portfolio item.</p>
-            </div>
-          </div>
-        </a>
-        <a target="_blank" href="http://weconnect.oksanaharris.com">
-          <div class="portItem">
-            <div class="portItemDesc">
-              <p class="portItemTitle">WeConnect</p>
-              <p class="portItemDescP">This is a description of this portfolio item.</p>
-            </div>
-          </div>
-        </a>
-        <a target="_blank" href="http://expressgallery.oksanaharris.com">
-          <div class="portItem">
-            <div class="portItemDesc">
-              <p class="portItemTitle">To-Do-Do-Do</p>
-              <p class="portItemDescP">This is a description of this portfolio item.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
     <!-- ABOUT -->
-  <div class="aboutCont">
-    <div class="pageSectionTitle">About</div>
-    <div class="rightAbout">
-      <div class="myPic"></div>
-      <div class="aboutDesc">I'm excited to transition into the dev realm after years of working on software products from a product management perspective. I'm looking forward to very hands-on involvement in building products, and hope to bring my PM skills of seeing how everything connects to the big picture, understanding the user, and organizing the work of many people into a coherent effort towards a common goal. I hope to contribute to a team of driven individuals who strive to connect people to awesome experiences. I am especially interested in technology projects that fuel human creativity and connection.</div>
-      <div class="life"></div>
+    <div class="aboutCont">
+      <div class="pageSectionTitle">About</div>
+      <div class="rightAbout">
+        <div class="myPic"></div>
+        <div class="aboutDesc">
+          <p class="aboutDescHeading">PM + UX + Dev</p>
+          <p class="aboutDescP">I'm excited to transition into the dev realm after years of working on software products from a product management angle.</p>
+          <p class="aboutDescP">I'm looking forward to this very hands-on type of involvement in building products, and hope to bring my PM skills of connecting everything to the big picture, thinking from a user's perspective, and organizing the work of many people into a coherent effort towards common goals.</p>
+          <p class="aboutDescP">I hope to contribute to a team of driven individuals who strive to connect people to awesome experiences.</p>
+          <p class="aboutDescP">I am especially interested in technology projects that fuel human creativity and connection.</p>
+          <p class="aboutDescHeading">Create + Build + Explore</p>
+          <p class="aboutDescP">In my free time I love to travel, capture my favorite things on camera, and tinker.</p>
+        </div>
+        <div class="life"></div>
+      </div>
     </div>
-  </div>
 
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+  </body>
+  </html>

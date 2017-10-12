@@ -12,6 +12,43 @@ a {
   margin: auto;
 }
 
+.navMenu {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* background-color: lightblue; */
+  line-height: 60px;
+  /* padding: 10px 0; */
+  vertical-align: middle;
+  /* align-items: flex-end; */
+  padding: 0 10%;
+  border-bottom: solid 1px #d6d8db;
+  box-shadow: 0 0 10px #d6d8db;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+}
+
+.navName {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+}
+
+.navDesc {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  margin-right: 50px;
+}
+
+.navItem {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  margin-left: 70px;
+  padding-top: 2px;
+}
+
 .timeline {
   padding-top: 15px;
   /*padding-bottom: 10px;*/
@@ -23,7 +60,7 @@ a {
 
 .stickyTimeline{
   position: fixed;
-  top: 0;
+  top: 200;
   width: 80%;
 }
 
@@ -623,7 +660,7 @@ a {
 }
 
 .portfolioContainer {
-
+  margin-top: 70px;
 }
 
 .portRow {
@@ -712,13 +749,14 @@ a {
 
 .portItemDescP {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: white;
   padding: 0px 20px 10px 20px;
 }
 
 .aboutCont {
-
+  margin-bottom: 200px;
+  margin-top: 200px;
 }
 
 .rightAbout {
@@ -729,7 +767,7 @@ a {
 
 .life {
   background: url(./img/mylife.jpg);
-  width: 30vw;
+  width: 33vw;
   height: 33vw;
   background-size: 100% 100%;
   /* min-width: 300px; */
@@ -737,18 +775,27 @@ a {
 
 .myPic {
   background: url(./img/oksana.jpg);
-  width: 30vw;
+  width: 31vw;
   height: 33vw;
-  background-size: 127% 110%;
-  background-position: 33% 53%;
+  background-size: 135% 110%;
+  background-position: 36% 53%;
   /* min-width: 300px; */
   border-radius: 2px;
 }
 
 .aboutDesc {
-  width: 33%;
+  width: 25vw;
   /*background-color: salmon;*/
   padding: 0 20px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
+}
+
+.aboutDescP{
+  padding-bottom: 10px;
+}
+
+.aboutDescHeading{
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
 }
