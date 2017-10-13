@@ -830,6 +830,9 @@ a {
     font-size: 22px; }
   .jobSummaryBulletText {
     font-size: 22px; }
+  .photogDescr {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px; }
   .photogImg {
     width: 90px;
     height: 90px; }
