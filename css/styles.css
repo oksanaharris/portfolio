@@ -347,116 +347,137 @@ a {
 
 .wedd1 {
   background-image: url("./img/wedd1.jpg");
-  background-size: 100px 122px;
-  background-position-y: 45%; }
+  /*  background-size: 100px 122px;
+  background-position-y: 45%;
+*/
+  background-size: 100% 100%; }
 
 .wedd2 {
   background-image: url("./img/wedd5.jpg");
-  background-size: 100px 148px;
+  /*  background-size: 100px 148px;
   background-position-x: 10%;
-  background-position-y: 4%; }
+  background-position-y: 4%;*/
+  background-size: 100% 100%; }
 
 .wedd3 {
   background-image: url("./img/wedd3.jpg");
-  background-size: 127px 100px;
-  background-position-x: 36%; }
+  /*  background-size: 127px 100px;
+  background-position-x: 36%;*/
+  background-size: 100% 100%; }
 
 .port1 {
   background-image: url("./img/port1.jpg");
-  background-size: 135px 100px;
-  background-position-x: 12%; }
+  /*  background-size: 135px 100px;
+  background-position-x: 12%;*/
+  background-size: 100% 100%; }
 
 .port2 {
   background-image: url("./img/port3.jpg");
-  background-size: 100px 119px;
-  background-position-y: 22%; }
+  /*  background-size: 100px 119px;
+  background-position-y: 22%;*/
+  background-size: 100% 100%; }
 
 .port3 {
   background-image: url("./img/port2.jpg");
-  background-size: 170px 107px;
-  background-position-x: 67%; }
+  /*  background-size: 170px 107px;
+  background-position-x: 67%;*/
+  background-size: 100% 100%; }
 
 .beauty1 {
   background-image: url("./img/beauty1.jpg");
-  background-size: 100px 140px;
+  /*  background-size: 100px 140px;
   background-position-y: 3%;
-  background-position-x: 1%; }
+  background-position-x: 1%*/
+  background-size: 100% 100%; }
 
 .beauty2 {
-  background-image: url("./img/beauty4.jpeg");
-  background-size: 126px 101px;
+  background-image: url("./img/beauty4.jpg");
+  /*  background-size: 126px 101px;
   background-position-y: 1%;
-  background-position-x: 49%; }
+  background-position-x: 49%;*/
+  background-size: 100% 100%; }
 
 .beauty3 {
-  background-image: url("./img/beauty6.jpeg");
-  background-size: 123px 154px;
+  background-image: url("./img/beauty6.jpg");
+  /*  background-size: 123px 154px;
   background-position-y: 59%;
-  background-position-x: 56%; }
+  background-position-x: 56%;*/
+  background-size: 100% 100%; }
 
 .nature1 {
   background-image: url("./img/nature1.jpg");
-  background-size: 100px 142px;
-  background-position-y: 45%;
-  background-position-x: 59%; }
+  /*  background-size: 100px 142px;
+    background-position-y: 45%;
+    background-position-x: 59%;*/
+  background-size: 100% 100%; }
 
 .nature2 {
   background-image: url("./img/nature2.jpg");
-  background-size: 150px 106px;
+  /*  background-size: 150px 106px;
   background-position-y: 59%;
-  background-position-x: 59%; }
+  background-position-x: 59%;*/
+  background-size: 100% 100%; }
 
 .nature3 {
   background-image: url("./img/nature3.jpg");
-  background-size: 114px 100px;
+  /*  background-size: 114px 100px;
   background-position-y: 59%;
-  background-position-x: 66%; }
+  background-position-x: 66%;*/
+  background-size: 100% 100%; }
 
 .usinp1 {
-  background-image: url("./img/usinp0.jpeg");
-  background-size: 210px 185px;
+  background-image: url("./img/usinp0.jpg");
+  /*  background-size: 210px 185px;
   background-position-y: 75%;
-  background-position-x: 61%; }
+  background-position-x: 61%;*/
+  background-size: 100% 100%; }
 
 .usinp2 {
-  background-image: url(./img/usinp1.jpeg);
-  background-size: 163px 112px;
+  background-image: url(./img/usinp1.jpg);
+  /*  background-size: 163px 112px;
   background-position-y: 97%;
-  background-position-x: 61%; }
+  background-position-x: 61%;*/
+  background-size: 100% 100%; }
 
 .usinp3 {
-  background-image: url("./img/usinp7.jpeg");
-  background-size: 170px 100px;
+  background-image: url("./img/usinp7.jpg");
+  /*  background-size: 170px 100px;
   background-position-y: 59%;
-  background-position-x: 34%; }
+  background-position-x: 34%;*/
+  background-size: 100% 100%; }
 
-.beach1 {
-  background-image: url("./img/beach1.jpeg");
+/*.beach1 {
+  background-image: url('./img/beach1.jpeg');
   background-size: 152px 100px;
   background-position-y: 59%;
-  background-position-x: 28%; }
-
+  background-position-x: 28%;
+}
+*/
 .beach2 {
-  background-image: url("./img/beach2.jpeg");
-  background-size: 100px 125px;
-  background-position-y: 86%;
-  background-position-x: 42%; }
+  background-image: url("./img/beach2.jpg");
+  /*  background-size: 100px 125px;
+    background-position-y: 86%;
+    background-position-x: 42%;*/
+  background-size: 100% 100%; }
 
-.beach3 {
-  background-image: url("./img/beach3.jpeg");
+/*.beach3 {
+  background-image: url('./img/beach3.jpeg');
   background-size: 147px 100px;
   background-position-y: 59%;
-  background-position-x: 53%; }
-
+  background-position-x: 53%;
+}
+*/
 .biz1 {
-  background-image: url("./img/biz1.jpeg");
-  background-size: 120px 100px;
+  background-image: url("./img/biz1.jpg");
+  /*  background-size: 120px 100px;
   background-position-x: 59%;
-  margin-top: 10px; }
+  margin-top: 10px;*/
+  background-size: 100% 100%; }
 
 .biz2 {
-  background-image: url("./img/biz2.png");
-  background-size: 100px 100px; }
+  background-image: url("./img/biz2.jpg");
+  /*background-size: 100px 100px;*/
+  background-size: 100% 100%; }
 
 .bizdesc {
   margin-top: 10px;
@@ -467,17 +488,19 @@ a {
   padding-top: 15px; }
 
 .dev1 {
-  background-image: url("./img/artcrawl.png");
-  background-size: 164px 270px;
+  background-image: url("./img/artcrawl.jpg");
+  /*  background-size: 164px 270px;
   background-position-y: 25%;
-  background-position-x: 54%;
-  border-radius: 10px 10px 3px 3px; }
+  background-position-x: 54%;*/
+  background-size: 100% 100%;
+  border-radius: 18px 18px 3px 3px; }
 
 .dev2 {
   background-image: url("./img/invisiart.jpg");
-  background-size: 146px 167px;
+  /*  background-size: 146px 167px;
   background-position-y: 63%;
-  background-position-x: 57%; }
+  background-position-x: 57%;*/
+  background-size: 100% 100%; }
 
 .dev3 {
   overflow: hidden;
