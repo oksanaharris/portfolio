@@ -741,12 +741,15 @@ a {
 
 .aboutDesc {
   width: 25vw;
-  height: 33vw;
   /*background-color: salmon;*/
   padding: 0 20px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  overflow: auto; }
+  font-size: 16px; }
+
+@media screen and (min-width: 1001px) {
+  .aboutDesc {
+    height: 33vw;
+    overflow: auto; } }
 
 .aboutDescP {
   padding-bottom: 10px; }
@@ -846,6 +849,7 @@ a {
     margin-bottom: 70px; }
   .aboutDesc {
     width: 77vw;
+    height: 100%;
     padding: 0;
     font-size: 37px; }
   .aboutDescP {
