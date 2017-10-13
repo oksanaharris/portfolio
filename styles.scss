@@ -29,6 +29,7 @@ a {
   top: 0;
   z-index: 5;
   background-color: white;
+  box-sizing: border-box;
 }
 
 .navName {
@@ -68,7 +69,11 @@ a {
 .stickyTimeline {
   position: fixed;
   top: 60px;
-  width: 80%;
+  left: 0;
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+  box-sizing: border-box;
 }
 
 .scrollingTimeline {
@@ -180,14 +185,14 @@ a {
   transition-property: background-position;
   transition-duration: 3s;
   background-image: url('./img/vine2.PNG');
-  background-size: 209px 98px;
-  background-position: -13px -25px;
+  background-size: 139% 180%;;
+  background-position: 25% 35%;
   background-repeat: no-repeat;
   z-index: 1;
 }
 
 .move {
-  background-position: -5px -17px;
+  background-position: 10% 10%;
 }
 
 .categoryDesc{
@@ -772,7 +777,7 @@ a {
 }
 
 .aboutCont {
-  margin-bottom: 200px;
+  margin-bottom: 400px;
 }
 
 .rightAbout {
@@ -816,7 +821,38 @@ a {
   font-size: 24px;
 }
 
+$timelineBtnHeight: 80px;
+$timelineBtnWidth: 25vw;
+
 @media screen and (max-width: 1000px) {
+
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navMenu {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .navName {
+    display: none;
+  }
+
+  .navItem {
+    font-size: 45px;
+    padding: 0;
+  }
+
+  .portfolioContainer {
+    margin-top: 110px;
+    margin-bottom: 0px;
+  }
 
   .portRow {
     flex-direction: column;
@@ -825,13 +861,127 @@ a {
 
   .portItem {
     width: 80vw;
-    height: 85vw;
+    height: 55vw;
     margin: 20px 0;
   }
 
   .portItemDesc {
     width: 80vw;
-    height: 85vw;
+    height: 55vw;
   }
 
+  .pageSectionTitle {
+    font-size: 65px;
+    margin-bottom: 10px;
+  }
+
+  .firstSection {
+    margin-top: 120px;
+  }
+
+  .portItemTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    padding: 20px 30px;
+  }
+
+  .portItemDescP {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 37px;
+    padding: 0px 30px 10px 30px;
+  }
+
+  .timelineBtns {
+    justify-content: space-between;
+  }
+
+  .timelineBtn {
+    height: $timelineBtnHeight;
+    width: $timelineBtnWidth;
+  }
+
+  .words {
+    position: relative;
+    height: $timelineBtnHeight;
+    width: $timelineBtnWidth;
+    line-height: $timelineBtnHeight;
+    font-size: 40px;
+  }
+
+  .reveal {
+    position: relative;
+    top: -$timelineBtnHeight;
+    right: 0px;
+    height: $timelineBtnHeight;
+    width: $timelineBtnWidth;
+  }
+
+  .background {
+    position: relative;
+    top: -2*$timelineBtnHeight;
+    height: $timelineBtnHeight;
+    width: $timelineBtnWidth;
+  }
+
+  .years {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+  }
+
+  .professionalContainer {
+    margin: 0 0 0 0;
+  }
+
+  .pgeDesc {
+    padding: 0 10px;
+  }
+
+  .jobTitle {
+    font-size: 40px;
+  }
+
+  .item {
+    font-size: 22px;
+  }
+
+  .jobSummaryBulletText {
+    font-size: 22px;
+  }
+
+  .photogImg {
+    width: 90px;
+    height: 90px;
+  }
+
+  .rightAbout {
+    flex-direction: column;
+  }
+
+  .myPic {
+    width: 80vw;
+    height: 98vw;
+    margin-bottom: 70px;
+  }
+
+  .aboutDesc {
+    width: 77vw;
+    padding: 0;
+    font-size: 37px;
+  }
+
+  .aboutDescP {
+    padding-bottom: 70px;
+  }
+
+  .aboutDescHeading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    padding-bottom: 10px;
+  }
+
+  .life {
+    width: 80vw;
+    height: 98vw;
+    margin-bottom: 70px;
+  }
 }

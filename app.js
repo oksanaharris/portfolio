@@ -45,7 +45,7 @@ window.onscroll = function(){
     timeline.style.top = (photogSec.offsetTop - timeline.offsetHeight) + 'px';
   } else {
     timeline.classList.remove('scrollingTimeline');
-    timeline.style.top = '60px';
+    timeline.style.top = navMenu.offsetHeight + 'px';
   }
 
 
@@ -215,7 +215,7 @@ function animatePortItem(event) {
     callback.preventDefault();
 
     if (isDomElement(to)) {
-      if (to === document.getElementById('photogSection') || to === document.getElementById('educationSection')) {
+      if (to === document.getElementById('photogSection') || to === document.getElementById('educationSection') || to === document.getElementById('profSec')) {
         to = to.offsetTop - (document.getElementById('timelineCont').offsetHeight + document.getElementById('navMenu').offsetHeight);
       } else {
         to = to.offsetTop - document.getElementById('navMenu').offsetHeight;
