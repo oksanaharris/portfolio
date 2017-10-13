@@ -210,7 +210,7 @@ function animatePortItem(event) {
     };
   })();
 
-  function scrollTo(to, callback, duration = 1500) {
+  function scrollTo(to, callback, duration = 1000) {
 
     callback.preventDefault();
 

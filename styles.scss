@@ -183,16 +183,16 @@ a {
   border-radius: 3px;
   /*background-color: seagreen;*/
   transition-property: background-position;
-  transition-duration: 3s;
+  transition-duration: 1.5s;
   background-image: url('./img/vine2.PNG');
   background-size: 139% 180%;;
-  background-position: 25% 35%;
+  background-position: 25% 45%;
   background-repeat: no-repeat;
   z-index: 1;
 }
 
 .move {
-  background-position: 10% 10%;
+  background-position: 15% 23%;
 }
 
 .categoryDesc{
@@ -746,7 +746,7 @@ a {
   left: 0;
   opacity: 0;
   transition-property: top, left, opacity;
-  transition-duration: 1.5s;
+  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
@@ -755,7 +755,7 @@ a {
   left: 0;
   opacity: 0;
   transition-property: top, left, opacity;
-  transition-duration: 1.5s;
+  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
@@ -764,7 +764,7 @@ a {
   left: 18vw;
   opacity: 0;
   transition-property: top, left, opacity;
-  transition-duration: 1.5s;
+  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
@@ -773,7 +773,7 @@ a {
   left: -18vw;
   opacity: 0;
   transition-property: top, left, opacity;
-  transition-duration: 1.5s;
+  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
@@ -829,10 +829,12 @@ a {
 
 .aboutDesc {
   width: 25vw;
+  height: 33vw;
   /*background-color: salmon;*/
   padding: 0 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  overflow: auto;
 }
 
 .aboutDescP{
