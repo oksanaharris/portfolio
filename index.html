@@ -4,22 +4,23 @@
   <meta charset="UTF-8">
   <title>Oksana Harris</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Raleway|Kalam|Kaushan+Script|Sedgwick+Ave|Bad+Script" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navMenu" id="navMenu">
     <div class="navName">OKSANA HARRIS</div>
     <!--     <div class="navDesc">Full-Stack Development | Product Management | UX Design</div> -->
-    <div class="navItem">Porfolio</div>
-    <div class="navItem">Timeline</div>
-    <div class="navItem">About</div>
+    <a id="portLink" href="#portfolioSection"><div class="navItem">Porfolio</div></a>
+    <a id="timelineLink" href="#timelineCont"><div class="navItem">Timeline</div></a>
+    <a id="aboutLink" href="#aboutCont"><div class="navItem">About</div></a>
   </nav>
+
   <div class="pageContainer">
 
     <!-- PORTFOLIO -->
 
-    <div class="portfolioContainer">
+    <div class="portfolioContainer" id="portfolioSection">
       <div class="pageSectionTitle">Portfolio</div>
       <div class="portRow">
         <a target="_blank" href="http://invisiARt.com">
@@ -166,9 +167,9 @@
     </div>
     <div id="professionalSection" class="section professionalSection withBottomPadding">
       <div class="braceContainer">
-        <img src="./img/curlybrace.png" class="pge" alt="">
-        <img src="./img/curlybrace.png" class="ecova" alt="">
-        <img src="./img/curlybrace.png" class="consulting" alt="">
+        <img src="./css/img/curlybrace.png" class="pge" alt="">
+        <img src="./css/img/curlybrace.png" class="ecova" alt="">
+        <img src="./css/img/curlybrace.png" class="consulting" alt="">
       </div>
       <div class="sectionContainer professionalContainer">
         <div class="professionalItem pgeDesc">
@@ -279,7 +280,7 @@
                 <div class="eye"></div>
                 <div class="eye"></div>
               </div>
-              <img class="smile" src="./img/smile.png">
+              <img class="smile" src="./css/img/smile.png">
             </div>
           </div>
         </div>
@@ -287,7 +288,7 @@
     </div>
 
     <!-- ABOUT -->
-    <div class="aboutCont">
+    <div class="aboutCont" id="aboutCont">
       <div class="pageSectionTitle">About</div>
       <div class="rightAbout">
         <div class="myPic"></div>

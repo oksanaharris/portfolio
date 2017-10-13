@@ -616,7 +616,7 @@ a {
   height: 18vw;
   border-radius: 3px;
   background: url("./img/invisiart.jpg");
-  background-size: 26vw 18vw;
+  background-size: 100% 100%;
   overflow: hidden;
   box-sizing: border-box; }
 
@@ -724,3 +724,15 @@ a {
 .aboutDescHeading {
   font-family: 'Oswald', sans-serif;
   font-size: 24px; }
+
+@media screen and (max-width: 1000px) {
+  .portRow {
+    flex-direction: column;
+    margin: 0; }
+  .portItem {
+    width: 80vw;
+    height: 85vw;
+    margin: 20px 0; }
+  .portItemDesc {
+    width: 80vw;
+    height: 85vw; } }

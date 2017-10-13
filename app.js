@@ -52,8 +52,6 @@ window.onscroll = function(){
   let revealId;
   let backgroundId;
 
-  console.log('prof sec offset top', profSec.offsetTop);
-
   if (window.scrollY < (profSec.offsetTop - 400)){
     revealId = 'revealDivEd';
     backgroundId = 'backgroundEd';
@@ -172,14 +170,28 @@ function animatePortItem(event) {
     let anchor2Link  = document.getElementById('aMovies');
     let anchor3Link  = document.getElementById('aProfessional');
 
+    let navPortLink = document.getElementById('portLink');
+    let navTimeLink = document.getElementById('timelineLink');
+    let navAboutLink = document.getElementById('aboutLink');
+
+
     //Anchors
     let anchor1      = document.getElementById('educationSection');
     let anchor2      = document.getElementById('professionalSection');
     let anchor3      = document.getElementById('photogSection');
 
+    let portAnchor = document.getElementById('portfolioSection');
+    let timeAnchor = document.getElementById('timelineCont');
+    let aboutAnchor = document.getElementById('aboutCont');
+
     anchor1Link.addEventListener('click', (e) => { scrollTo(anchor1, e) }, false);
     anchor2Link.addEventListener('click', (e) => { scrollTo(anchor2, e) }, false);
     anchor3Link.addEventListener('click', (e) => { scrollTo(anchor3, e) }, false);
+
+    navPortLink.addEventListener('click', (e) => { scrollTo(portAnchor, e) }, false);
+    navTimeLink.addEventListener('click', (e) => { scrollTo(timeAnchor, e) }, false);
+    navAboutLink.addEventListener('click', (e) => { scrollTo(aboutAnchor, e) }, false);
+
   }
 
   function scrollTopValue(domElement) { //DEBUG
@@ -198,29 +210,15 @@ function animatePortItem(event) {
     };
   })();
 
-  function scrollTo(to, callback, phrase, duration = 1500) { //FIXME this always starts from '0', instead of the clicked element offsetTop -> This is because the position is calculated for the main <html> element, not the <iframe>'s <html> tag
-    /*console.log('from:', from); //DEBUG
-    // console.log('from.clientY:', from.clientY); //DEBUG
-    // console.log('from.target.offsetTop:', from.target.offsetTop); //DEBUG
+  function scrollTo(to, callback, duration = 1500) {
 
-    // console.log('position():', document.documentElement.offsetTop || document.body.parentNode.offsetTop || document.body.offsetTop); //DEBUG
-    // console.log('document.documentElement:', document.documentElement); //DEBUG
-    // console.log('document.body:', document.body); //DEBUG
-    let start;
-
-    if (isMouseEvent(from)) { //FIXME : the scroll starts at the link, not where the screen really is : fix that
-      // start = from.target.offsetTop;
-      start = from.pageY; //FIXME
-    }
-    else {
-      start = from;
-    }*/
+    callback.preventDefault();
 
     if (isDomElement(to)) {
-      if (to === document.getElementById('photogSection')) {
-        to = to.offsetTop - document.getElementById('timelineCont').offsetHeight;
+      if (to === document.getElementById('photogSection') || to === document.getElementById('educationSection')) {
+        to = to.offsetTop - (document.getElementById('timelineCont').offsetHeight + document.getElementById('navMenu').offsetHeight);
       } else {
-        to = to.offsetTop;
+        to = to.offsetTop - document.getElementById('navMenu').offsetHeight;
       }
     }
 
