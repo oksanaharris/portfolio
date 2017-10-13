@@ -762,11 +762,15 @@ footer {
   height: 250px;
   width: 100%;
   /*border-bottom: solid 1px #d6d8db;*/
-  /*box-shadow: 0 0 10px #d6d8db;*/
+  box-shadow: 0 3px 10px #3d4044;
   background-color: #3d4044;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  box-sizing: border-box; }
+
+.footerItem {
+  margin: 0 10px; }
 
 .logo {
   width: 60px;
@@ -898,6 +902,8 @@ footer {
     width: 80vw;
     height: 90vw;
     margin-bottom: 70px; }
+  .footerItem {
+    margin: 0 35px; }
   .logo {
     width: 100px;
     height: 100px; } }
