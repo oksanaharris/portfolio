@@ -897,4 +897,7 @@ footer {
   .life {
     width: 80vw;
     height: 90vw;
-    margin-bottom: 70px; } }
+    margin-bottom: 70px; }
+  .logo {
+    width: 100px;
+    height: 100px; } }
