@@ -643,10 +643,28 @@ a {
   width: 26vw;
   height: 18vw;
   border-radius: 3px;
-  background: url("./img/invisiart.jpg");
-  background-size: 100% 100%;
   overflow: hidden;
   box-sizing: border-box; }
+
+.invisiArtPort {
+  background: url("./img/invisiart-port.jpg");
+  background-size: 100% 100%; }
+
+.reactKanbanPort {
+  background: url("./img/kanban-port3.jpg");
+  background-size: 100% 102%; }
+
+.artCrawlPort {
+  background: url("./img/artcrawl-port.jpg");
+  background-size: 100% 100%; }
+
+.pixelPainterPort {
+  background: url("./img/pixelpainter-port.jpg");
+  background-size: 100% 100%; }
+
+.expressGalleryPort {
+  /*  background: url('./img/expressgallery-port.jpg');
+  background-size: 100% 100%;*/ }
 
 .portItemDesc {
   background: -moz-linear-gradient(top, rgba(32, 114, 214, 0.6) 0%, rgba(32, 114, 214, 0.6) 100%);
@@ -744,7 +762,7 @@ a {
   /*background-color: salmon;*/
   padding: 0 20px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px; }
+  font-size: 1vw; }
 
 @media screen and (min-width: 1001px) {
   .aboutDesc {
