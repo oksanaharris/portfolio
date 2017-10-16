@@ -663,8 +663,8 @@ a {
   background-size: 100% 100%; }
 
 .expressGalleryPort {
-  /*  background: url('./img/expressgallery-port.jpg');
-  background-size: 100% 100%;*/ }
+  background: url("./img/arcatekt-port.jpg");
+  background-size: 100% 100%; }
 
 .portItemDesc {
   background: -moz-linear-gradient(top, rgba(32, 114, 214, 0.6) 0%, rgba(32, 114, 214, 0.6) 100%);
@@ -688,7 +688,7 @@ a {
   left: 0;
   opacity: 0;
   transition-property: top, left, opacity;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in-out; }
 
 .bottomAnimate {
@@ -696,7 +696,7 @@ a {
   left: 0;
   opacity: 0;
   transition-property: top, left, opacity;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in-out; }
 
 .leftAnimate {
@@ -704,7 +704,7 @@ a {
   left: 18vw;
   opacity: 0;
   transition-property: top, left, opacity;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in-out; }
 
 .rightAnimate {
@@ -712,7 +712,7 @@ a {
   left: -18vw;
   opacity: 0;
   transition-property: top, left, opacity;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in-out; }
 
 .centerDesc {
