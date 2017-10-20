@@ -5,6 +5,7 @@
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .pageContainer {
@@ -746,6 +747,11 @@ a {
 
 .expressGalleryPort {
   background: url('./img/arcatekt-port.jpg');
+  background-size: 100% 100%;
+}
+
+.weConnectPort {
+  background: url('./img/weconnect-port2.jpg');
   background-size: 100% 100%;
 }
 

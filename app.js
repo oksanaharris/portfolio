@@ -238,9 +238,6 @@ function animatePortItem(event) {
     var change = to - start;
     var currentTime = 0;
     var increment = 20;
-    console.log('start:', start); //DEBUG
-    console.log('to:', to); //DEBUG
-    console.log('change:', change); //DEBUG
 
     var animateScroll = function() {
       // increment the time
