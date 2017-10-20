@@ -8,6 +8,7 @@
 // body.addEventListener("scroll", scrolling);
 
 
+
 window.onscroll = function(){
 
   // console.log('Y POSITION', photogSection);
@@ -18,34 +19,54 @@ window.onscroll = function(){
   let profSec = document.getElementById('professionalSection');
   let photogSec = document.getElementById('photogSection');
 
-  let thresholdPassed = false;
+  let firstThresholdPassed = false;
+  let secondThresholdPassed = false;
 
-  if (thresholdPassed === false && timeline.getBoundingClientRect().top <= navMenu.offsetHeight) {
+  if (firstThresholdPassed === false && timeline.getBoundingClientRect().top <= navMenu.offsetHeight) {
+
+    console.log('poops is firing');
+    // (educSec.getBoundingClientRect().top - 700)
 
     timeline.classList.add('stickyTimeline');
 
-    educSec.classList.add('educTopPadding');
+    // educSec.classList.add('educTopPadding');
 
-    thresholdPassed = true;
+    firstThresholdPassed = true;
   }
 
-  if (thresholdPassed === true && educSec.getBoundingClientRect().top > (navMenu.offsetHeight + timeline.offsetHeight)) {
+  if (firstThresholdPassed === true && educSec.getBoundingClientRect().top > (navMenu.offsetHeight + timeline.offsetHeight)) {
+
+    console.log('mcgee is firing');
 
     timeline.classList.remove('stickyTimeline');
 
-    educSec.classList.remove('educTopPadding');
+    firstThresholdPassed === false;
+
+    // educSec.classList.remove('educTopPadding');
   }
 
-  if (photogSec.getBoundingClientRect().top <= (navMenu.offsetHeight + timeline.offsetHeight)){
+  if (secondThresholdPassed === false && photogSec.getBoundingClientRect().top <= (navMenu.offsetHeight + timeline.offsetHeight)){
+
+    console.log('moron is firing');
 
     timeline.classList.remove('stickyTimeline');
 
     timeline.classList.add('scrollingTimeline');
 
-    timeline.style.top = (photogSec.offsetTop - timeline.offsetHeight) + 'px';
-  } else {
+    secondThresholdPassed = true;
+
+    // timeline.style.top = (photogSec.offsetTop - timeline.offsetHeight) + 'px';
+  }
+
+  if (secondThresholdPassed === true && photogSec.getBoundingClientRect().top > (navMenu.offsetHeight + timeline.offsetHeight)){
+
+    // console.log('kelsey is firing');
+
     timeline.classList.remove('scrollingTimeline');
-    timeline.style.top = navMenu.offsetHeight + 'px';
+    timeline.classList.add('stickyTimeline');
+
+    secondThresholdPassed = false;
+    // timeline.style.top = navMenu.offsetHeight + 'px';
   }
 
 
@@ -53,6 +74,7 @@ window.onscroll = function(){
   let backgroundId;
 
   if (window.scrollY < (profSec.offsetTop - 400)){
+
     revealId = 'revealDivEd';
     backgroundId = 'backgroundEd';
 
@@ -69,6 +91,7 @@ window.onscroll = function(){
     document.getElementById(backgroundId).classList.add('move');
 
   } else if (window.scrollY >= (profSec.offsetTop - 500) && window.scrollY < (photogSec.offsetTop - 700)) {
+
     revealId = 'revealDivProf';
     backgroundId = 'backgroundProf';
 
@@ -85,6 +108,8 @@ window.onscroll = function(){
     document.getElementById(backgroundId).classList.add('move');
 
   } else if (window.scrollY >= (photogSec.offsetTop - 700)) {
+    console.log('disney is firing');
+
     revealId = 'revealDivPhot';
     backgroundId = 'backgroundPhot';
 

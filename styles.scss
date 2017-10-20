@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +57,9 @@ a {
 .timeline {
   padding-top: 15px;
   /*padding-bottom: 10px;*/
+  position: absolute;
+  top: 760px;
+  width: 80%;
   z-index: 4;
   background: -moz-linear-gradient(top, rgba(255,255,255,1) 90%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(255,255,255,1) 90%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -79,6 +83,7 @@ a {
 
 .scrollingTimeline {
   position: absolute;
+  top: 2420px;
   width: 80%;
 }
 
@@ -255,9 +260,9 @@ a {
   justify-content: space-around;
 }
 
-.educTopPadding{
+/*.educTopPadding{
   margin-top: 355px;
-}
+}*/
 
 .item {
   width: 9%;
@@ -304,6 +309,7 @@ a {
 
 .educationSection {
   /*background-color: pink;*/
+  margin-top: 350px;
   padding-bottom: 400px;
 }
 
@@ -995,6 +1001,16 @@ $timelineBtnWidth: 25vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 37px;
     padding: 0px 30px 10px 30px;
+  }
+
+  .stickyTimeline {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+    box-sizing: border-box;
   }
 
   .timelineBtns {
